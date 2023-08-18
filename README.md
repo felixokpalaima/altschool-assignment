@@ -6,10 +6,10 @@ First, let us create a user called "felix-altschool" with an expiration date of 
 ![CreateUserWithTwoWeeksLifespan](create_user_with_two_weeks_lifespan-1.png)
 
 
-Let us confirm that the user has been created with by running the followiing command 
+Let us confirm that the user has been created by running the following command 
 
 ```
-$ cat /etc/passwd
+$ cat /etc/passwd | grep felix-altschool
 ```
 ![Confirm user creation](confirm_user_is_created.png)
 
@@ -29,7 +29,7 @@ Now, let us confirm that all these features were applied correctly to this user.
 As shown in the image above, the Account expires on 1st September, 2023 which is exactly two weeks from the day it was created.
 
 The next step in the process, we are going to create a group called 'altschool' and then add the user to this group.
-- As shown in the image below, in the first line, we created the group 'altschool. 
+- As shown in the image below, in the first line, we created the group 'altschool'. 
 - In the second command, we added the user 'felix-altschool' to the group 'altschool'.
 - This was confirmed in the third command which listed what groups felix-altschool belonged. 
 
